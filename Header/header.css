@@ -1,0 +1,247 @@
+/* Define Open Sans fonts locally */
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../font/OpenSans-Light.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../font/OpenSans-Regular.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../font/OpenSans-Bold.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 700;
+}
+
+/* Base Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+.birdiejet-header {
+    background-color: white;
+    padding: 26px 0; /* Matches top padding from original snippet */
+    min-height: 141px; /* Ensures minimum height from original snippet */
+    display: flex; /* Make it a flex container for header-container */
+    align-items: center; /* Vertically center content if header-container doesn't fill height */
+}
+
+/* Container for 200px margin */
+.header-container {
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    max-width: 1920px; /* Adjust as needed for effective 200px margin on very large screens */
+    margin: 0 auto; /* Center the container */
+}
+@media (max-width: 1200px) { /* Adjust padding for slightly smaller desktops */
+.header-container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+}
+@media (max-width: 991.98px) { /* Mobile specific padding */
+.header-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+/* Logo Styling */
+.logo-img {
+    width: 247px; /* From snippet */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Responsive scaling */
+}
+
+/* Contact Info Block Styling */
+.contact-info-block {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between phone and email capsules */
+}
+
+/* Phone Capsule */
+.contact-phone-capsule {
+    background-color: #004479; /* From snippet */
+    color: white; /* From snippet */
+    border-radius: 30px; /* From snippet */
+    padding: 8px 15px; /* Adjusted from snippet's rough area */
+    display: flex;
+    align-items: center;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-family: "OpenSansRegular", sans-serif;
+    white-space: nowrap;
+    text-decoration: none;
+    min-width: 203px; /* From snippet, ensures minimum width */
+    justify-content: center; /* Center content in capsule */
+}
+.contact-phone-capsule i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Email Capsule */
+.contact-email-capsule {
+    background-color: white; /* From snippet */
+    border: 1px solid black; /* From snippet */
+    border-radius: 30px; /* From snippet */
+    padding: 8px 15px; /* Adjusted from snippet's rough area */
+    display: flex;
+    align-items: center;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-family: "OpenSansRegular", sans-serif;
+    color: black; /* From snippet */
+    white-space: nowrap;
+    text-decoration: none;
+    min-width: 218px; /* From snippet, ensures minimum width */
+    justify-content: center; /* Center content in capsule */
+}
+.contact-email-capsule i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+    color: black;
+}
+
+/* Navigation Styling */
+.main-nav .nav-link {
+    font-size: clamp(0.75rem, 1.75vw, 26.667px);
+    font-family: "OpenSansLight", sans-serif;
+    font-weight: 300;
+    color: black; /* Default color from snippet */
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    
+}
+.main-nav .nav-link.active {
+    color: #004479; /* "Home" color from snippet */
+    font-family: "OpenSansBold", sans-serif;
+}
+.main-nav .nav-link:hover {
+    color: #004479; /* Hover color */
+}
+
+/* --- DESKTOP LAYOUT (>= 992px) --- */
+@media (min-width: 768px) {
+.desktop-header-content {
+    display: flex; /* Use flexbox for top-level desktop layout */
+    justify-content: space-between; /* Space between logo and right column */
+    align-items: center; /* Vertically align logo and right column */
+    width: 100%;
+}
+
+.desktop-right-column {
+    display: flex;
+    flex-direction: column; /* Stack contact info above nav */
+    align-items: flex-end; /* Align contents to the right */
+    flex-grow: 1; /* Allows right column to take available space */
+}
+
+/* "Centered against logo image" on desktop for contact info */
+/* This is achieved by flex-grow: 1 on the right column and align-items: flex-end.
+    It allows the contact block to position itself relative to the available space. */
+.contact-info-block {
+        margin-bottom: 5px; /* Small space between contact info and nav */
+}
+
+/* Hide mobile elements on desktop */
+.mobile-header-content {
+    display: none !important;
+}
+}
+
+/* --- MOBILE LAYOUT (< 992px) --- */
+@media (max-width: 767.98px) {
+    .desktop-header-content {
+        display: none !important; /* Hide desktop layout */
+    }
+
+    .mobile-header-content {
+        display: flex; /* Show mobile layout */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobile-top-bar {
+        display: flex;
+        justify-content: space-between; /* Logo and toggler */
+        align-items: center;
+        width: 100%;
+        position: relative; /* For precise logo centering */
+        padding-bottom: 10px; /* Space below top bar */
+    }
+
+    .mobile-logo-wrapper {
+        position: absolute; /* Absolute for exact centering */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0; /* Align to top of parent */
+        padding: 10px 0; /* Vertical padding */
+    }
+    .mobile-logo-img {
+        width: 180px; /* Smaller logo on mobile */
+        height: auto;
+    }
+
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+        font-size: 1.8rem; /* Larger icon */
+        line-height: 1;
+        color: #004479; /* Color the burger icon */
+        margin-left: auto; /* Pushes to the right */
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .mobile-contact-info {
+        display: flex; /* Show on mobile */
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center horizontally */
+        width: 100%;
+        padding-top: 15px; /* Space below mobile top bar */
+        padding-bottom: 15px;
+        border-top: 1px solid #e2e2e2; /* Separator */
+    }
+    .mobile-contact-info .contact-phone-capsule,
+    .mobile-contact-info .contact-email-capsule {
+        margin: 5px 0; /* Space between stacked items */
+        width: 80%; /* Make capsules wider for touch */
+        max-width: 250px; /* Limit max width */
+        justify-content: center; /* Center text in capsules */
+    }
+    .mobile-contact-info .contact-email-capsule {
+        border: 1px solid #004479; /* Use primary blue border for better visibility on mobile */
+        color: #004479; /* Change text color for mobile consistency */
+    }
+    .mobile-contact-info .contact-email-capsule i {
+        color: #004479; /* Change icon color for mobile consistency */
+    }
+
+    /* Mobile Nav specific styling */
+    .navbar-collapse-mobile {
+        width: 100%;
+        border-top: 1px solid #e2e2e2; /* Separator below contact info */
+        padding-top: 15px;
+    }
+    .navbar-collapse-mobile .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+        width: 100%;
+    }
+    .navbar-collapse-mobile .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-collapse-mobile .nav-link {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #e2e2e2; /* Separator for clarity */
+    }
+    .navbar-collapse-mobile .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+}
