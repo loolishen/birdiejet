@@ -17,6 +17,5 @@ function loadHTML(url, elementId) {
 
 // Call the function for header and footer when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    loadHTML('header.html', 'header-placeholder');
-    loadHTML('footer.html', 'footer-placeholder');
+    loadHTML('header/header.html', 'header-placeholder');
 });
