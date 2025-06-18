@@ -20,6 +20,14 @@ body {
     background-color: #f8f9fa;
 }
 
+a{
+    background-color: transparent;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 .birdiejet-header {
     background-color: white;
     padding: 26px 0; /* Matches top padding from original snippet */
@@ -71,11 +79,27 @@ body {
     padding: 8px 15px; /* Adjusted from snippet's rough area */
     display: flex;
     align-items: center;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(0.75rem, 1.2vw, 26.667px);
     font-family: "OpenSansRegular", sans-serif;
     white-space: nowrap;
     text-decoration: none;
     min-width: 203px; /* From snippet, ensures minimum width */
+    justify-content: center; /* Center content in capsule */
+}
+
+.contact-phone-capsule:hover{
+    background-color: white; /* From snippet */
+    border: 1px solid black; /* From snippet */
+    border-radius: 30px; /* From snippet */
+    padding: 8px 15px; /* Adjusted from snippet's rough area */
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.75rem, 1.2vw, 26.667px);
+    font-family: "OpenSansRegular", sans-serif;
+    color: black; /* From snippet */
+    white-space: nowrap;
+    text-decoration: none;
+    min-width: 218px; /* From snippet, ensures minimum width */
     justify-content: center; /* Center content in capsule */
 }
 .contact-phone-capsule i {
@@ -92,7 +116,7 @@ body {
     padding: 8px 15px; /* Adjusted from snippet's rough area */
     display: flex;
     align-items: center;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(0.75rem, 1.2vw, 26.667px);
     font-family: "OpenSansRegular", sans-serif;
     color: black; /* From snippet */
     white-space: nowrap;
@@ -100,6 +124,22 @@ body {
     min-width: 218px; /* From snippet, ensures minimum width */
     justify-content: center; /* Center content in capsule */
 }
+
+.contact-email-capsule:hover{
+    background-color: #004479; /* From snippet */
+    color: white; /* From snippet */
+    border-radius: 30px; /* From snippet */
+    padding: 8px 15px; /* Adjusted from snippet's rough area */
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.75rem, 1.2vw, 26.667px);
+    font-family: "OpenSansRegular", sans-serif;
+    white-space: nowrap;
+    text-decoration: none;
+    min-width: 203px; /* From snippet, ensures minimum width */
+    justify-content: center; /* Center content in capsule */
+}
+
 .contact-email-capsule i {
     margin-right: 8px;
     font-size: 1.1rem;
@@ -108,7 +148,7 @@ body {
 
 /* Navigation Styling */
 .main-nav .nav-link {
-    font-size: clamp(0.75rem, 1.75vw, 26.667px);
+    font-size: clamp(0.75rem, 1.2vw, 26.667px);
     font-family: "OpenSansLight", sans-serif;
     font-weight: 300;
     color: black; /* Default color from snippet */
@@ -123,6 +163,33 @@ body {
 .main-nav .nav-link:hover {
     color: #004479; /* Hover color */
 }
+
+/* Common icon styling */
+.contact-phone-capsule img,
+.contact-email-capsule img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* By default, hide the hover icon */
+.icon-hover {
+  display: none;
+}
+
+/* On hover, show hover icon and hide default */
+.contact-phone-capsule:hover .icon-default,
+.contact-email-capsule:hover .icon-default {
+  display: none;
+}
+
+.contact-phone-capsule:hover .icon-hover,
+.contact-email-capsule:hover .icon-hover {
+  display: inline-block;
+}
+
 
 /* --- DESKTOP LAYOUT (>= 992px) --- */
 @media (min-width: 768px) {
