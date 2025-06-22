@@ -1,0 +1,279 @@
+/* Define Open Sans fonts locally */
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../font/OpenSans-Light.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../font/OpenSans-Regular.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../font/OpenSans-SemiBold.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 550;
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../font/OpenSans-Bold.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html,
+body {
+  margin: 0px;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* ////////////// */
+/* Section 1 Code */
+/* ////////////// */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 576px;
+    overflow: hidden;
+  }
+  
+  .hero-banner__background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/main-page-img-1.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-banner__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .hero-banner__bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    object-fit: cover;
+  }
+
+  .hero-banner__title {
+    font-family: 'OpenSansSemiBold', sans-serif;
+    color: white;
+    font-size: clamp(21.333px, 3.5vw, 2.7rem);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+  .hero-banner__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%); /* Centered and pulled down a bit */
+    text-decoration: none;
+  }
+  
+  .hero-banner__button {
+    display: inline-block;
+    background-color: rgba(250, 250, 250, 0.2);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: "OpenSansSemiBold", sans-serif;
+    text-align: center;
+    text-decoration: none;
+  }  
+
+/* ////////////////// */
+/* Section 1 Code END */
+/* ////////////////// */
+
+/* ////////////// */
+/* Section 2 Code */
+/* ////////////// */
+.air-intro-section {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+
+.air-intro__title {
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 36px);
+    color: #004479;
+    margin-bottom: 20px;
+  }
+  
+  .air-intro__text {
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: clamp(0.5rem, 1.35vw, 18.667px);
+    color: #000;
+    line-height: 22px;
+  }
+
+  /* Custom container with fixed 200px side margin, responsive */
+.air-intro-container {
+    width: 100%;
+    max-width: 1920px; 
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .air-intro__gradient-column {
+    background: linear-gradient(270deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(247, 247, 247, 0.5) 24%,
+                rgba(235, 235, 235, 1) 86%);
+
+  }
+
+  .air-intro__gradient-column.reverse {
+    background: linear-gradient(90deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(247, 247, 247, 0.5) 24%,
+                rgba(235, 235, 235, 1) 86%);
+  }
+  
+  @media (max-width: 991.98px) {
+    .air-intro__gradient-column {
+      padding: 20px;
+    }
+  }
+  
+  
+  
+@media (max-width: 1399.98px) {
+    .air-intro-container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .air-intro-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .air-intro-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* ////////////////// */
+/* Section 2 Code END */
+/* ////////////////// */
+
+/* ////////////// */
+/* Section 3 Code */
+/* ////////////// */
+
+.vip-charter-section-3 {
+  height: 496px;
+  overflow: hidden;
+  position: relative;
+}
+
+.vip-charter-3__bg {
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+
+.vip-charter-3__gradient {
+  width: 652px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+}
+
+.vip-charter-3__heading {
+  font-family: 'OpenSansSemiBold', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+.vip-charter-3__subtext {
+  font-family: 'OpenSansRegular', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive tweaks if needed */
+@media (max-width: 991.98px) {
+  .vip-charter-section-3 {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .vip-charter-3__gradient {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+
+/* ////////////////// */
+/* Section 3 Code END */
+/* ////////////////// */
+
+/* ////////////// */
+/* Section 4 Code */
+/* ////////////// */
+
+.vip-charter-4__container {
+  max-width: 1040px;
+}
+
+.vip-charter-4__main-img {
+  border-radius: 14px;
+}
+
+.vip-charter-4__feature-box {
+  background-color: #F6F7FD;
+  border-radius: 14px;
+  padding: 20px;
+  height: 100%;
+}
+
+.vip-charter-4__feature-text {
+  font-family: 'OpenSansLight', sans-serif;
+  font-size: 15px;
+  color: #004479;
+  line-height: 23px;
+  margin: 0;
+}
+
+/* ////////////////// */
+/* Section 4 Code END */
+/* ////////////////// */

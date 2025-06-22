@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../font/OpenSans-Light.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../font/OpenSans-Regular.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../font/OpenSans-SemiBold.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 550;
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../font/OpenSans-Bold.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 700;
+}
+
+/* ////////////////// */
+/* Footer Styles */
+/* ////////////////// */
+
+.footer-section {
+  background-color: #555;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: white;
+  font-family: 'OpenSansRegular', sans-serif;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1920px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-title {
+  font-family: 'OpenSansLight', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  width: auto;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px; /* CUSTOM WIDTH: adjust as needed */
+  height: 2px;
+  background-color: white;
+}
+
+.footer-links li {
+    font-family: 'OpenSansLight', sans-serif;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  font-family: 'OpenSansLight', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons img {
+  margin-right: 10px;
+}
+
+.footer-contact p {
+    font-family: 'OpenSansLight', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.footer-bottom p {
+    font-family: 'OpenSansLight', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Responsive footer container padding */
+@media (max-width: 1399.98px) {
+  .footer-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
