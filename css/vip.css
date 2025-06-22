@@ -250,30 +250,326 @@ a {
 /* ////////////// */
 /* Section 4 Code */
 /* ////////////// */
+/* ///////////////////////////////// */
+/* VIP Chartered Section 4b Styles  */
+/* ///////////////////////////////// */
 
-.vip-charter-4__container {
-  max-width: 1040px;
-}
+/* ///////////////////////////////// */
+/* VIP Chartered Section 4b Styles  */
+/* ///////////////////////////////// */
 
-.vip-charter-4__main-img {
+.vip-charter-4b__img-wrapper {
+  width: 510px;
+  height: 510px;
   border-radius: 14px;
+  overflow: hidden;
 }
 
-.vip-charter-4__feature-box {
+.vip-charter-4b__main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vip-charter-4b__box {
   background-color: #F6F7FD;
   border-radius: 14px;
+  height: 245px;
   padding: 20px;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.vip-charter-4__feature-text {
+.vip-charter-4b__icon {
+  width: 51px;
+  height: 51px;
+  margin-bottom: 10px;
+}
+
+.vip-charter-4b__text {
   font-family: 'OpenSansLight', sans-serif;
   font-size: 15px;
-  color: #004479;
   line-height: 23px;
+  color: #004479;
   margin: 0;
 }
 
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+  .vip-charter-4b__img-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .vip-charter-4b__box {
+    height: auto;
+  }
+}
+
+
 /* ////////////////// */
 /* Section 4 Code END */
+/* ////////////////// */
+
+/* ///////////////////////////////// */
+/* VIP Chartered Section 5 Styles  */
+/* ///////////////////////////////// */
+
+.vip-charter-5-section {
+  background-color: #E2E6EA;
+  height: 240px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.vip-charter-5-title {
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 42px;
+  color: #004479;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive padding for smaller screens */
+@media (max-width: 1399.98px) {
+  .vip-charter-5-section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vip-charter-5-section {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .vip-charter-5-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .vip-charter-5-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .vip-charter-5-title {
+    font-size: 26px;
+  }
+}
+
+/* ////////////////// */
+/* Section 5 Code END */
+/* ////////////////// */
+
+/* ///////////////////////////////// */
+/* VIP Chartered Section 6 Styles  */
+/* ///////////////////////////////// */
+
+.flight-trust-section {
+  background-color: #ffffff;
+}
+
+.flight-trust-section2 {
+  background-color: #e2e6ea;
+}
+
+.flight-trust-container {
+  width: 100%;
+  max-width: 1920px;
+  padding-top:75px;
+  padding-bottom:75px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flight-trust__title {
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 36px);
+  color: #004479;
+  line-height: 1.2;
+  margin-bottom: 1vw;
+}
+
+.flight-trust__text {
+  font-family: 'OpenSansLight', sans-serif;
+  font-size: clamp(0.5rem, 1.35vw, 18.667px);
+  line-height: 1.2;
+  color: #000;
+  max-width: 30vw;
+  margin-bottom: 1vw;
+}
+
+.flight-trust__learn-button {
+  font-family: 'OpenSansRegular', sans-serif;
+  font-size: clamp(0.5rem, 1.35vw, 18.667px);
+  color: #004479;
+  border: 2px solid #004479;
+  padding: 8px 20px;
+  border-radius: 12px;
+  background-color: rgba(250, 250, 250, 0.6);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.flight-trust__learn-button:hover {
+  background-color: #004479;
+  color: #fff;
+}
+
+/* Responsive Padding (same as section 2 & 4) */
+@media (max-width: 1399.98px) {
+  .flight-trust-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .flight-trust-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .flight-trust-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* ////////////////// */
+/* Section 6 Code END */
+/* ////////////////// */
+
+/* ///////// */
+/* Section 7 */
+/* ///////// */
+
+.cta-trusted-section {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.final-cta-trusted-section{
+  background-color: white;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.cta-trusted__title {
+  font-family: 'OpenSansSemiBold', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 42px);
+  color: #004479;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cta-trusted__button {
+  padding: 15px 40px;
+  font-size: 20px;
+  font-family: 'OpenSansSemiBold', sans-serif;
+  color: #004479;
+  background-color: rgba(250, 250, 250, 0.2);
+  border: 1px solid #004479;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-trusted__button:hover {
+  background-color: #004479;
+  color: white;
+}
+
+/* ////////////////// */
+/* Section 7 Code END */
+/* ////////////////// */
+
+/* ////////////////// */
+/* Section 8 - VIP Chartered Flights */
+/* ////////////////// */
+
+.vip-charter-section {
+  background-color: #e2e6ea;
+}
+
+.vip-charter-container {
+  width: 100%;
+  max-width: 1920px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vip-charter__title {
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 36px);
+  color: #004479;
+  margin-bottom: 1vw;
+}
+
+.vip-charter__text {
+  font-family: 'OpenSansLight', sans-serif;
+  font-size: clamp(0.5rem, 1.35vw, 18.667px);
+  line-height: 22px;
+  color: #000;
+  max-width: 500px;
+  margin-bottom: 0.5vw;
+}
+
+.vip-charter__button {
+  font-family: 'OpenSansRegular', sans-serif;
+  font-size: clamp(0.5rem, 1.35vw, 18.667px);
+  color: #004479;
+  border: 2px solid #004479;
+  border-radius: 12px;
+  background-color: rgba(250, 250, 250, 0.6);
+  padding: 10px 28px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.vip-charter__button:hover {
+  background-color: #004479;
+  color: white;
+}
+
+/* Responsive padding (consistent with other sections) */
+@media (max-width: 1399.98px) {
+  .vip-charter-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vip-charter-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .vip-charter-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+/* ////////////////// */
+/* Section 8 Code END */
 /* ////////////////// */
