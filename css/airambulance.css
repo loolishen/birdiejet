@@ -138,6 +138,8 @@ a {
 .air-ambulance-services-container {
   width: 100%;
   max-width: 1920px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   padding-left: 200px;
   padding-right: 200px;
   margin-left: auto;
@@ -146,7 +148,7 @@ a {
 
 .air-ambulance-services-title {
   font-family: 'OpenSansBold', sans-serif;
-  font-size: 48px;
+  font-size: clamp(1.5rem, 2.5vw, 3.333rem);
   color: #004479;
 }
 
@@ -170,7 +172,7 @@ a {
 
 .air-ambulance-service-title {
   font-family: 'OpenSansBold', sans-serif;
-  font-size: 20px;
+  Font-size: clamp(0.75rem, 1.75vw, 26.667px);
   color: #004479;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -179,7 +181,7 @@ a {
 
 .air-ambulance-service-text {
   font-family: 'OpenSansLight', sans-serif;
-  font-size: 15px;
+  font-size: clamp(0.5rem, 1.35vw, 18.667px);
   color: black;
   line-height: 22px;
   margin: 0;
@@ -233,13 +235,13 @@ a {
 
 .air-why-choose-title {
   font-family: 'OpenSansBold', sans-serif;
-  font-size: 40px;
+  font-size: clamp(21.333px, 3.5vw, 2.7rem);
   color: #004479;
 }
 
 .air-why-choose-subtitle {
   font-family: 'OpenSansLight', sans-serif;
-  font-size: 18px;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   color: black;
   max-width: 800px;
   margin-left: auto;
@@ -259,14 +261,14 @@ a {
 
 .air-why-card-title {
   font-family: 'OpenSansSemiBold', sans-serif;
-  font-size: 20px;
+  Font-size: clamp(0.75rem, 1.75vw, 26.667px);
   color: #004479;
   margin-bottom: 12px;
 }
 
 .air-why-card-text {
   font-family: 'OpenSansLight', sans-serif;
-  font-size: 15px;
+  font-size: clamp(0.5rem, 1.35vw, 18.667px);
   color: #004479;
   line-height: 23px;
   margin: 0;
@@ -335,12 +337,12 @@ a {
 
 .air-mission-stats__number {
   font-family: 'OpenSansBold', sans-serif;
-  font-size: 42px;
+  font-size: clamp(1.5rem, 3vw, 42px);
 }
 
 .air-mission-stats__label {
   font-family: 'OpenSansBold', sans-serif;
-  font-size: 19px;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   margin-top: 10px;
 }
 

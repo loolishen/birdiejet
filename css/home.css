@@ -349,7 +349,7 @@ a {
 
 .mission-stats__description {
   font-family: 'OpenSansRegular', sans-serif;
-  font-size: 0.95rem;
+  font-size: clamp(0.875rem, 1.5vw, 1.167rem);
   color: white;
   max-width: 440px;
   line-height: 1.5;
@@ -407,7 +407,7 @@ a {
 
 .cta-trusted__button {
   padding: 15px 40px;
-  font-size: 20px;
+  font-size: 	clamp(1rem, 2vw, 1.667rem);
   font-family: 'OpenSansSemiBold', sans-serif;
   color: #004479;
   background-color: rgba(250, 250, 250, 0.2);

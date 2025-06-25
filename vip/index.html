@@ -12,7 +12,80 @@
 </html>
 
 <body>
-    <div id="header-placeholder"></div>
+    <header class="birdiejet-header">
+        <div class="header-container">
+            <!-- Desktop Layout (hidden on mobile) -->
+            <div class="desktop-header-content d-none d-md-flex">
+                <!-- Logo -->
+                <div class="logo-wrapper">
+                    <a href="/">
+                        <!-- Using placeholder for image path. Replace with actual path: ../assets/Birdiejet Logo_Blue Logo 1.png -->
+                        <img src="/assets/Birdiejet Logo_Blue Logo 1.png" alt="BirdieJet Logo" class="img-fluid logo-img">
+                    </a>
+                </div>
+                <!-- Right Utility Group (Contact Info + Nav stacked) -->
+                <div class="desktop-right-column">
+                    <div class="contact-info-block">
+                        <!-- Phone Capsule -->
+                        <a href="tel:+85570903587" class="contact-phone-capsule">
+                            <img src="/assets/header/phone icon.png" class="icon icon-default" alt="Phone Icon">
+                            <img src="/assets/header/phone icon(1).png" class="icon icon-hover" alt="Phone Icon Hover">
+                            +855 70 903 587
+                        </a>
+                        <a href="mailto:info@birdiejet.net" class="contact-email-capsule">
+                            <img src="/assets/header/email icon.png" class="icon icon-default" alt="Email Icon">
+                            <img src="/assets/header/email icon(1).png" class="icon icon-hover" alt="Email Icon Hover">
+                            info@birdiejet.net
+                          </a>
+                    </div>
+                    <nav class="main-nav home-menu d-flex">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/airambulance/">Air Ambulance</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/company/">The Company</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact/">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+            <!-- Mobile Layout (hidden on desktop) -->
+            <div class="mobile-header-content d-md-none">
+                <div class="mobile-top-bar">
+                    <div class="mobile-logo-wrapper">
+                        <a href="#" class="birdiejet-logo">
+                            <!-- Using placeholder for image path. Replace with actual path: ../assets/Birdiejet Logo_Blue Logo 1.png -->
+                            <img src="assets/Birdiejet Logo_Blue Logo 1.png" alt="BirdieJet Logo" class="img-fluid mobile-logo-img">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fas fa-bars"></span>
+                    </button>
+                </div>
+                <div class="mobile-contact-info">
+                    <a href="tel:+85570903587" class="contact-phone-capsule">
+                        <i class="fas fa-phone-alt"></i> +855 70 903 587
+                    </a>
+                    <a href="mailto:info@birdiejet.net" class="contact-email-capsule">
+                        <i class="fas fa-envelope"></i> info@birdiejet.net
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse-mobile" id="navbarNavMobile">
+                    <nav class="main-nav vip-menu-mobile d-none">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/airambulance">Air Ambulance</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/company">The Company</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
 
     <!-- Section 1 -->
     <section class="hero-banner">
@@ -21,7 +94,7 @@
           <img class="hero-banner__bg-img" src="/assets/vip/Arrival AC 2(1) 1.png" />
           <div class="hero-banner__cta text-center">
             <h1 class="hero-banner__title">Expert Air Transport:<br>When Every Second Counts<br> &amp; Every Detail Matters.</h1>
-            <a href="#contact" class="hero-banner__button mt-3">Contact Us</a>
+            <a href="/contact/" class="hero-banner__button mt-3">Contact Us</a>
           </div>
         </div>
       </section>
@@ -81,7 +154,7 @@
 
 <!-- Section 4 -->
 
-<section class="vip-charter-4b-section py-5">
+<section class="vip-charter-4b-section" style="padding-top: 75px; padding-bottom: 75px;">
   <div class="container px-lg-5">
     <div class="row justify-content-center align-items-center gx-5">
       
@@ -162,7 +235,7 @@
           Whether you're traveling for business or spending time with family, 
           our private charters offer a flexible and comfortable way to get where you need to be.
         </p>
-        <a href="#learn-more" class="flight-trust__learn-button mt-3 d-inline-block">Contact Us</a>
+        <a href="/contact/" class="flight-trust__learn-button mt-3 d-inline-block">Contact Us</a>
       </div>
       <!-- Image -->
       <div class="col-lg-6">
@@ -204,7 +277,7 @@
           They focus on your safety and comfort at every stage of the journey, 
           ensuring a relaxed and enjoyable flight from takeoff to landing.
         </p>
-        <a href="#learn-more" class="flight-trust__learn-button mt-3 d-inline-block">Learn More</a>
+        <a href="/company/" class="flight-trust__learn-button mt-3 d-inline-block">Learn More</a>
       </div>
       <!-- Image -->
       <div class="col-lg-6">
@@ -221,7 +294,7 @@
     <h2 class="cta-trusted__title">
       Elevate your Travel Experience Today.
     </h2>
-    <a href="#contact" class="cta-trusted__button mt-4 d-inline-block">
+    <a href="/contact/" class="cta-trusted__button mt-4 d-inline-block">
       Contact Us
     </a>
   </div>
@@ -242,7 +315,7 @@
           Access world-class critical care with our specialized air ambulance—delivering 
           expert medical support when every second counts.
         </p>
-        <a href="#vip-charter" class="vip-charter__button mt-3 d-inline-block">Learn More</a>
+        <a href="/vip/" class="vip-charter__button mt-3 d-inline-block">Learn More</a>
       </div>
     </div>
   </div>

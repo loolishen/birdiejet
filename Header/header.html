@@ -6,7 +6,7 @@
             <div class="desktop-header-content d-none d-md-flex">
                 <!-- Logo -->
                 <div class="logo-wrapper">
-                    <a href="#">
+                    <a href="/">
                         <!-- Using placeholder for image path. Replace with actual path: ../assets/Birdiejet Logo_Blue Logo 1.png -->
                         <img src="/assets/Birdiejet Logo_Blue Logo 1.png" alt="BirdieJet Logo" class="img-fluid logo-img">
                     </a>
@@ -26,14 +26,24 @@
                             info@birdiejet.net
                           </a>
                     </div>
-                    <nav class="main-nav">
+                    <nav class="main-nav home-menu d-flex">
                         <ul class="nav">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">VIP Chartered</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">The Company</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/vip">VIP Chartered</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/company">The Company</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
                         </ul>
                     </nav>
+
+                    <nav class="main-nav vip-menu d-none">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/airambulance">Air Ambulance</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/company/">The Company</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
                 </div>
             </div>
 
@@ -59,14 +69,24 @@
                     </a>
                 </div>
                 <div class="collapse navbar-collapse-mobile" id="navbarNavMobile">
-                    <nav class="main-nav">
+                    <nav class="main-nav home-menu-mobile d-flex">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">VIP Chartered</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">The Company</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/vip/">VIP Chartered</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/company">The Company</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
                         </ul>
                     </nav>
+
+                    <nav class="main-nav vip-menu-mobile d-none">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/airambulance">Air Ambulance</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/company">The Company</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
                 </div>
             </div>
 
@@ -74,5 +94,34 @@
     </header>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const currentPath = window.location.pathname;
+
+        // Check if we're in the VIP section
+        const isVipPage = currentPath.startsWith('/vip');
+
+        // Show/hide correct menu
+        if (isVipPage) {
+            document.querySelector('.home-menu').classList.add('d-none');
+            document.querySelector('.vip-menu').classList.remove('d-none');
+        } else {
+            document.querySelector('.home-menu').classList.remove('d-none');
+            document.querySelector('.vip-menu').classList.add('d-none');
+        }
+
+        // Automatically set active state for all links
+        const allNavLinks = document.querySelectorAll('.main-nav .nav-link');
+
+        allNavLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    </script>
+
 </body>
 </html>

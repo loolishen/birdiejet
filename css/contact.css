@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../font/OpenSans-Light.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../font/OpenSans-Regular.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../font/OpenSans-SemiBold.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 550;
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../font/OpenSans-Bold.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.contact-hero-section {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.contact-hero-container {
+    max-width: 764px;
+}
+
+.contact-hero-title {
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem); /* Scales from mobile to desktop */
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-hero-description {
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Scales from mobile to desktop */
+    color: black;
+    line-height: 1.5;
+}
+
+/* //////////// */
+/* FORM SECTION */
+/* //////////// */
+
+.custom-select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23004779" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 40px; /* make space for icon */
+}
+
+.custom-select:focus {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23004779" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+}
+
+.custom-select option {
+    color: black;
+}
+
+.form-label {
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 20px;
+    color: #004479;
+}
+
+.custom-input {
+    border-radius: 12px;
+    border: 1px solid #004479;
+    background-color: rgba(250, 250, 250, 0.2);
+    padding: 10px 15px;
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+}
+
+.submit-button {
+    background-color: #004479;
+    color: white;
+    font-family: 'OpenSansBold', sans-serif;
+    padding: 10px 40px;
+    border-radius: 12px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #003366;
+    color: white;
+}
