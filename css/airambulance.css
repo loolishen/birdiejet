@@ -208,6 +208,18 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  .air-ambulance-services-title{
+    font-size: clamp(21.333px, 7vw, 2.7rem);
+  }
+
+  .air-ambulance-service-title{
+    font-size: clamp(1.25rem, 5.5vw, 36px);
+  }
+
+  .air-ambulance-service-text{
+    font-size: clamp(0.75rem, 4vw, 18.667px);
+  }
 }
 
 
@@ -294,6 +306,18 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  .air-why-choose-title{
+    font-size: clamp(21.333px, 7vw, 2.7rem);
+  }
+
+  .air-why-card-title{
+    font-size: clamp(0.75rem, 6vw, 26.667px);
+  }
+
+  .air-why-card-text{
+    font-size: clamp(0.75rem, 4vw, 18.667px);
+  }
 }
 /* ////////////////// */
 /* Section 3 Code END */
@@ -365,6 +389,11 @@ a {
   .air-mission-stats-container {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .mobile-spacing-4{
+    margin-bottom: 1rem;
+    margin-top: -3rem;
   }
 }
 
@@ -449,6 +478,35 @@ a {
   .flight-trust-container {
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 20px;
+  }
+  
+  .flight-trust__title{
+    padding-left: 16px;
+    padding-bottom: 10px;
+    padding-top: 48px;
+    font-size: clamp(1.25rem, 5.5vw, 36px);
+  }
+
+  .flight-trust__text{
+    padding-bottom: 48px;
+    font-size: clamp( 0.75rem, 4vw, 18.667px);
+    line-height: 1.2;
+    margin-bottom: 64px;
+  }
+
+  .mobile-section-6{
+    margin-bottom: 0 !important;
+  }
+
+  .flight-trust__learn-button {
+    display: block;
+    width: fit-content;
+    margin-bottom: 58px;
+    margin-top: -32px !important;
+    margin-left: 16px;
+    padding: 12px 24px; /* Make button slightly larger for mobile */
+    font-size: clamp(0.75rem, 4vw, 1rem);
   }
 }
 /* ////////////////// */
@@ -573,6 +631,126 @@ a {
     padding-right: 16px;
   }
 }
+
+@media (max-width: 767.98px) {
+  .vip-charter-container {
+    margin-top: -3rem;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .vip-charter-container .row {
+    flex-direction: column !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .vip-charter-section .row > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .vip-charter-image {
+    display: block;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+  }
+
+  .vip-charter__title {
+    padding-top: 48px;
+    font-size: clamp(1.25rem, 5.5vw, 36px);
+  }
+
+  .vip-charter__text {
+    max-width: 100% !important;
+    padding: 0 16px !important;
+    font-size: clamp( 0.75rem, 4vw, 18.667px);
+    line-height: 1.2;
+  }
+
+  .vip-charter__button {
+    display: block;
+    width: fit-content;
+    margin-top: 28px !important;
+    margin-left: 16px;
+    padding: 12px 24px; /* Make button slightly larger for mobile */
+    font-size: clamp(0.75rem, 4vw, 1rem);
+  }
+
+  /* Ensure text has left and right padding */
+  h3, p {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
 /* ////////////////// */
 /* Section 7 Code END */
 /* ////////////////// */
+
+/* ////////////////// */
+/* Mobile Code Scaling */
+/* ////////////////// */
+
+@media (max-width: 767.98px) {
+
+  /* Section 5: Stack image above text */
+  .flight-trust-container .row {
+    flex-direction: column !important;
+  }
+
+  .flight-trust-container .row > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .flight-trust__text {
+    max-width: 100% !important;
+    padding: 0 16px !important;
+    margin-bottom: 48px;
+  }
+
+  .flight-trust__learn-button {
+    display: block;
+    width: fit-content;
+    margin-left: 16px;
+    margin-bottom: 48px;
+    padding: 12px 24px;
+    font-size: clamp(0.75rem, 4vw, 1rem);
+  }
+
+  /* Section 7: VIP Charter - Stack image above text */
+  .vip-charter-container .row {
+    flex-direction: column !important;
+  }
+
+  .vip-charter-container .row > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .vip-charter-section img.img-fluid {
+    display: block;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+  }
+
+  .vip-charter__title, .vip-charter__text {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    text-align: left;
+  }
+
+  .vip-charter__button {
+    display: block;
+    width: fit-content;
+    margin-left: 16px;
+    margin-bottom: 48px;
+    padding: 12px 24px;
+    font-size: clamp(0.75rem, 4vw, 1rem);
+  }
+}
