@@ -17,6 +17,6 @@ function loadHTML(url, elementId) {
 
 // Call the function for header and footer when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    loadHTML('/staging/birdiejet/Header/header.html', 'header-placeholder');
-    loadHTML('/staging/birdiejet/Footer/footer.html', 'footer-placeholder');
+    loadHTML('Header/header.html', 'header-placeholder');
+    loadHTML('Footer/footer.html', 'footer-placeholder');
 });

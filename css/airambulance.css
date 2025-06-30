@@ -307,7 +307,7 @@ a {
   position: relative;
   height: 399px;
   overflow: hidden;
-  background: url('/staging/birdiejet/assets/airambulance/Group\ 81.png') no-repeat center center;
+  background: url('/assets/airambulance/Group\ 81.png') no-repeat center center;
   background-size: cover;
   opacity: 80%;
 }
