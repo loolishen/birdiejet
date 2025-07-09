@@ -48,6 +48,7 @@
   width: auto;
   padding-bottom: 12px;
   position: relative;
+  color: #004479;
 }
 
 .footer-title::after {
@@ -57,24 +58,28 @@
   bottom: 0;
   width: 60px; /* CUSTOM WIDTH: adjust as needed */
   height: 2px;
-  background-color: white;
+  background-color: #004479;
+  color: #004479;
 }
 
 .footer-links li {
     font-family: 'OpenSansRegular', sans-serif;
   margin-bottom: 12px;
+  color: #004479;
 }
 
 .footer-links a {
   font-family: 'OpenSansRegular', sans-serif;
   font-size: 18px;
-  color: white;
+  color: #004479;
   text-decoration: none;
   font-weight: 300;
+  color: #004479;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
+  
 }
 
 .footer-icons img {
@@ -87,6 +92,7 @@
   margin: 0;
   font-weight: 300;
   line-height: 1.5;
+  color: #004479;
 }
 
 .footer-bottom p {
@@ -94,6 +100,7 @@
   font-size: 23px;
   font-weight: 300;
   margin: 0;
+  color: #004479;
 }
 
 /* Responsive footer container padding */

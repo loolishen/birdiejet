@@ -257,7 +257,7 @@ a {
 /* ////////////////// */
 
 .the-company-section-3 {
-  background-image: url('assets/company/Arrival\ AC3\ 1.png'); /* replace with your actual image path */
+  background-image: url('/assets/company/Arrival\ AC3\ 1.png'); /* replace with your actual image path */
   background-size: cover;
   background-position: center;
   height: 906px;

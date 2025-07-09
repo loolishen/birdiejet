@@ -34,6 +34,6 @@ function initMobileMenu() {
 
 // Call header and footer loading when DOM is ready
 document.addEventListener('DOMContentLoaded', function () {
-    loadHTML('Header/header.html', 'header-placeholder', initMobileMenu);
-    loadHTML('/staging/birdiejet/Footer/footer.html', 'footer-placeholder');
+    loadHTML('/Header/header.html', 'header-placeholder', initMobileMenu);
+    loadHTML('/Footer/footer.html', 'footer-placeholder');
 });
