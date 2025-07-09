@@ -48,27 +48,25 @@ a {
     width: 100%;
     height: 576px;
     overflow: hidden;
-  }
-  
-  .hero-banner__background {
+}
+
+.hero-banner__background {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('./img/main-page-img-1.png');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .hero-banner__overlay {
+    /* background-image properties are no longer needed here */
+}
+
+.hero-banner__overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: 1;
-  }
-  
-  .hero-banner__bg-img {
+}
+
+.hero-banner__bg-img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -76,26 +74,26 @@ a {
     left: 0;
     z-index: 2;
     object-fit: cover;
-  }
+}
 
-  .hero-banner__title {
+.hero-banner__title {
     font-family: 'OpenSansSemiBold', sans-serif;
     color: white;
     font-size: clamp(21.333px, 3.5vw, 2.7rem);
     margin-bottom: 10px;
     line-height: 1.2;
-  }
-  
-  .hero-banner__cta {
+}
+
+.hero-banner__cta {
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 3;
     transform: translate(-50%, -50%); /* Centered and pulled down a bit */
     text-decoration: none;
-  }
-  
-  .hero-banner__button {
+}
+
+.hero-banner__button {
     display: inline-block;
     background-color: rgba(250, 250, 250, 0.2);
     border: 1px solid #fff;
@@ -106,7 +104,32 @@ a {
     font-family: "OpenSansSemiBold", sans-serif;
     text-align: center;
     text-decoration: none;
-  }  
+}  
+
+@media (max-width: 575.98px) {
+    .hero-banner__title{
+        min-width: 90vw;
+        line-height: 1.6;
+        text-align: left;
+        font-size: clamp(23.333px, 3.5vw, 2.7rem);
+    }
+
+  .hero-banner__button {
+      position: absolute;
+      top: 90%;
+      left: 5%;
+      
+  } 
+
+  .hero-banner__cta{
+    top:45%;
+  }
+
+  .hero-banner__button{
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}
 
 /* ////////////////// */
 /* Section 1 Code END */

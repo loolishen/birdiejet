@@ -108,6 +108,13 @@ a {
     text-decoration: none;
   }  
 
+  @media (max-width: 575.98px) {
+  .hero-banner__title{
+    min-width: 350px;
+  }
+  
+}
+
 /* ////////////////// */
 /* Section 1 Code END */
 /* ////////////////// */

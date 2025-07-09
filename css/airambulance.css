@@ -122,6 +122,13 @@ a {
   }
 }
 
+@media (max-width: 575.98px) {
+  .hero-banner__title{
+    min-width: 350px;
+  }
+  
+}
+
 /* ////////////////// */
 /* Section 1 Code END */
 /* ////////////////// */
@@ -306,6 +313,11 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
+  
+  
+ .air-mission-stats-section{
+     height: auto !important;
+ }
 
   .air-why-choose-title{
     font-size: clamp(21.333px, 7vw, 2.7rem);
@@ -331,7 +343,7 @@ a {
   position: relative;
   height: 399px;
   overflow: hidden;
-  background: url('/assets/airambulance/Group\ 81.png') no-repeat center center;
+  background: url('assets/airambulance/Group\ 81.png') no-repeat center center;
   background-size: cover;
   opacity: 80%;
 }

@@ -24,7 +24,7 @@
 /* ////////////////// */
 
 .footer-section {
-  background-color: #555;
+  background-color: #aaaaaa;
   padding-top: 60px;
   padding-bottom: 40px;
   color: white;
@@ -41,7 +41,7 @@
 }
 
 .footer-title {
-  font-family: 'OpenSansLight', sans-serif;
+  font-family: 'OpenSansRegular', sans-serif;
   font-size: 26px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -61,12 +61,12 @@
 }
 
 .footer-links li {
-    font-family: 'OpenSansLight', sans-serif;
+    font-family: 'OpenSansRegular', sans-serif;
   margin-bottom: 12px;
 }
 
 .footer-links a {
-  font-family: 'OpenSansLight', sans-serif;
+  font-family: 'OpenSansRegular', sans-serif;
   font-size: 18px;
   color: white;
   text-decoration: none;
@@ -82,7 +82,7 @@
 }
 
 .footer-contact p {
-    font-family: 'OpenSansLight', sans-serif;
+    font-family: 'OpenSansRegular', sans-serif;
   font-size: 18px;
   margin: 0;
   font-weight: 300;
@@ -90,7 +90,7 @@
 }
 
 .footer-bottom p {
-    font-family: 'OpenSansLight', sans-serif;
+    font-family: 'OpenSansRegular', sans-serif;
   font-size: 23px;
   font-weight: 300;
   margin: 0;
@@ -115,5 +115,36 @@
   .footer-container {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .footer-title{
+    font-size: 24px;
+    color: #004479;
+  }
+
+  .footer-title::after{
+    background-color: #004479;
+  }
+
+  .footer-links a{
+    font-size: 18px;
+    color: #004479;
+
+  }
+
+  .footer-bottom p{
+    margin-top: 75px;
+    font-size: 14px;
+    color: #004479;
+  }
+
+  .footer-contact p{
+    color: #004479;
+  }
+  
+  .mobile-img-adjustment{
+      position: relative;
+      left: -2vw;
+        max-width: 60%;
   }
 }

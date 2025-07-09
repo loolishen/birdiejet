@@ -105,3 +105,97 @@ body {
     background-color: #003366;
     color: white;
 }
+
+@media (max-width: 575.98px) {
+
+    /* Remove the image on mobile */
+    .contact-section .col-md-6:nth-child(2) {
+        display: none !important;
+    }
+
+    /* Stack form full width on mobile */
+    .contact-section .col-md-6:nth-child(1) {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    /* Target side-by-side fields only */
+    .contact-section .row > div {
+        margin-bottom: 12px; /* spacing when stacked */
+    }
+
+    /* Make two fields in the same row smaller so margin fits */
+    .contact-section .row > div.col-8,
+    .contact-section .row > div.col-4,
+    .contact-section .row > div.col-6 {
+        flex: 0 0 calc(50% - 6px); /* subtract margin to fit two items */
+        max-width: calc(50% - 6px);
+    }
+
+    /* Add spacing to the first field in each pair */
+    .contact-section .row > div:nth-child(1),
+    .contact-section .row > div:nth-child(3),
+    .contact-section .row > div:nth-child(5),
+    .contact-section .row > div:nth-child(7) {
+        margin-right: 12px; /* spacing between fields */
+    }
+
+    .contact-section .row:first-child .col-8 {
+        flex: 0 0 65%;  /* Make the Name field 65% width */
+        max-width: 65%;
+    }
+
+    .contact-section .row:first-child .col-4 {
+        flex: 0 0 30%;  /* Make the No. of Pax field 30% width */
+        max-width: 30%;
+    }
+
+    /* Make sure inputs fill their column width */
+    .custom-input {
+        width: 100%;
+    }
+    /* Reduce form padding */
+    .container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    /* Scale label font size for mobile */
+    .form-label {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+    }
+
+    /* Scale input, textarea, and select for mobile */
+    .custom-input {
+        font-size: clamp(0.9rem, 4vw, 1rem);
+        padding: 10px 12px;
+    }
+
+    .contact-hero-title{
+        font-size: clamp(21.333px, 7vw, 2.7rem);
+        text-align: left;
+    }
+
+    .contact-hero-description {
+        line-height: 1.2;
+        text-align: left;
+        padding-right: 2px;
+    }
+
+    /* Make button larger for easier tapping */
+    .submit-button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+    /* Fix Bootstrap gutter issue to remove potential horizontal scroll */
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .col-6, .col-8, .col-4 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

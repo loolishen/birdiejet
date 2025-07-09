@@ -1,4 +1,4 @@
-function loadHTML(url, elementId) {
+function loadHTML(url, elementId, callback) {
     fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -8,6 +8,7 @@ function loadHTML(url, elementId) {
         })
         .then(html => {
             document.getElementById(elementId).innerHTML = html;
+            if (callback) callback(); // run event binding only after HTML is injected
         })
         .catch(error => {
             console.error(`Error loading ${url}:`, error);
@@ -15,8 +16,24 @@ function loadHTML(url, elementId) {
         });
 }
 
-// Call the function for header and footer when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    loadHTML('Header/header.html', 'header-placeholder');
-    loadHTML('Footer/footer.html', 'footer-placeholder');
+function initMobileMenu() {
+    const burgerIcon = document.getElementById('burgerIcon');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const closeOverlay = document.getElementById('closeOverlay');
+
+    if (burgerIcon && mobileOverlay && closeOverlay) {
+        burgerIcon.addEventListener('click', function () {
+            mobileOverlay.classList.add('active');
+        });
+
+        closeOverlay.addEventListener('click', function () {
+            mobileOverlay.classList.remove('active');
+        });
+    }
+}
+
+// Call header and footer loading when DOM is ready
+document.addEventListener('DOMContentLoaded', function () {
+    loadHTML('Header/header.html', 'header-placeholder', initMobileMenu);
+    loadHTML('/staging/birdiejet/Footer/footer.html', 'footer-placeholder');
 });
